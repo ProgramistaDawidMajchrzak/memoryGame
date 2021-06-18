@@ -1,0 +1,188 @@
+.start-panel {
+    position: absolute;
+    height: 90vh;
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #064420;
+    border-radius: 10px;
+}
+
+.game-choose-panel {
+    position: relative;
+    width: 90%;
+    height: 300px;
+    border: 5px solid #064420;
+    border-radius: 10px;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-choose-options {
+    width: 230px;
+    height: 210px;
+    border-radius: 10px;
+    display: flex;
+    /* border: 5px solid #064420; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.game-choosed {
+    border: 5px solid #064420;
+    border-radius: 10px;
+}
+
+.game-choose-options :hover {
+    border: 5px solid #064420;
+    border-radius: 10px;
+    transition: .1s ease;
+}
+
+.start-game-button {
+    position: relative;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 15px 25px;
+    border: 5px solid #064420;
+    border-radius: 10px;
+    background-color: #418b60;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+.start-game-button:hover {
+    border: 5px solid #418b60;
+    background-color: #064420;
+    transition: .2s ease;
+}
+
+.main-title {
+    display: block;
+    margin: 30px;
+}
+
+/* Players Start*/
+.player-box {
+    height: 100px;
+    width: 200px;
+    border: 5px solid #064420;
+    border-radius: 10px;
+    position: absolute;
+    top: 10%;
+}
+
+.player-box input {
+    margin: 10px;
+    padding: 10px;
+    background-color: #418b60;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.player-box ::placeholder {
+    color: black;
+    font-size: 15px;
+}
+
+.active-round {
+    background-color: #418b60;
+}
+
+.first-player {
+    left: 15%;
+}
+
+.second-player {
+    right: 14%;
+}
+
+.player-box h3 {
+    margin: 10px;
+}
+
+.result-box {
+    display: flex;
+}
+
+/* Players End*/
+
+/* Game Start*/
+
+.game-box {
+    width: 70%;
+    height: 500px;
+    border: 5px solid #064420;
+    border-radius: 10px;
+    position: relative;
+    left: 15%;
+    top: 150px;
+}
+
+.game-panel {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.flex-row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 90px;
+    height: 90px;
+    background-color: #064420;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.secret-box {
+    width: 90px;
+    height: 90px;
+    background-color: #418b60;
+    margin-left: 10px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 90px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.visible-panel {
+    position: absolute;
+    z-index: 15;
+}
+
+.unvisible-panel {
+    position: absolute;
+    z-index: 5;
+}
+
+.open-box {
+    opacity: 0;
+}
+
+.box-disapear {
+    width: 90px;
+    height: 90px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
